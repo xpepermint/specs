@@ -11,8 +11,13 @@ The following convention is a [JSON Schema](http://json-schema.org/) describing 
 ```json
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "id": "https://specs.0xcert.org/schemas/digital-asset.json",
   "description": "Represents asset metadata.",
+  "id": "https://specs.0xcert.org/schemas/digital-asset.json",
+  "meta": [
+    "description",
+    "image",
+    "name"
+  ],
   "properties": {
     "description": {
       "type": "string",
@@ -27,11 +32,6 @@ The following convention is a [JSON Schema](http://json-schema.org/) describing 
       "description": "Identifies an asset.",
     }
   },
-  "meta": [
-    "description",
-    "image",
-    "name"
-  ],
   "title": "DigitalAsset",
   "type": "object"
 }
